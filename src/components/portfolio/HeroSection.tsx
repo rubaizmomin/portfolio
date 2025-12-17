@@ -32,7 +32,7 @@ const HeroSection = () => {
             className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight"
           >
             Hi, I'm{" "}
-            <span className="gradient-text">John Doe</span>
+            <span className="gradient-text">Rubaiz Momin</span>
           </motion.h1>
 
           <motion.p
@@ -68,7 +68,7 @@ const HeroSection = () => {
               <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
-              href="mailto:hello@johndoe.com"
+              href="mailto:rubaizmomin@gmail.com"
               className="p-3 glass-card hover:bg-primary/10 transition-all duration-300 group"
             >
               <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />

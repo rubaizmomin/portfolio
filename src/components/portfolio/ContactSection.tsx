@@ -30,7 +30,7 @@ const ContactSection = () => {
                   <label className="text-sm font-medium mb-2 block">Name</label>
                   <input
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="Rubaiz Momin"
                     className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all"
                   />
                 </div>
@@ -38,7 +38,7 @@ const ContactSection = () => {
                   <label className="text-sm font-medium mb-2 block">Email</label>
                   <input
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="rubaizmomin@gmail.com"
                     className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all"
                   />
                 </div>
@@ -75,10 +75,10 @@ const ContactSection = () => {
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
                   <a
-                    href="mailto:hello@johndoe.com"
+                    href="mailto:rubaizmomin@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@johndoe.com
+                    rubaizmomin@gmail.com
                   </a>
                 </div>
               </div>
