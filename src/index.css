@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 
 /* Design System - Dark elegant portfolio theme */
 
@@ -45,8 +45,8 @@
     --shadow-glow: 0 0 60px -15px hsl(35 90% 55% / 0.3);
     --shadow-card: 0 25px 50px -12px hsl(220 20% 2% / 0.5);
 
-    --font-display: 'Syne', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-display: 'Sora', sans-serif;
+    --font-body: 'Sora', sans-serif;
 
     --sidebar-background: 220 15% 10%;
     --sidebar-foreground: 40 20% 95%;

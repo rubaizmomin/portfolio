@@ -8,6 +8,7 @@ import SkillsSection from "@/components/portfolio/SkillsSection";
 import ContactSection from "@/components/portfolio/ContactSection";
 import Footer from "@/components/portfolio/Footer";
 import ImpactProjectsSection from "@/components/portfolio/ImpactProjectsSection";
+
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
