@@ -27,8 +27,8 @@ const Navigation = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Rubaiz_Momin_Resume.txt";
-    link.download = "Rubaiz_Momin_Resume.txt";
+    link.href = "/rubaiz_momin_resume.pdf";
+    link.download = "rubaiz_momin_resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -48,7 +48,7 @@ const Navigation = () => {
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#" className="font-display font-bold text-xl">
-            <span className="gradient-text">RM</span>
+            <span className="gradient-text">rubaiz momin</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -75,7 +75,7 @@ const Navigation = () => {
               className="gap-2"
             >
               <Download className="w-4 h-4" />
-              Resume
+              my resume
             </Button>
           </div>
 
@@ -134,7 +134,7 @@ const Navigation = () => {
                   className="gap-2 mt-4"
                 >
                   <Download className="w-4 h-4" />
-                  Download Resume
+                  download resume
                 </Button>
               </motion.div>
             </div>

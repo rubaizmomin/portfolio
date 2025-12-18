@@ -1,5 +1,5 @@
 import AnimatedSection from "../AnimatedSection";
-import { Code2, Palette, Rocket } from "lucide-react";
+import { Code2, Lock, Palette, Rocket } from "lucide-react";
 
 const AboutSection = () => {
   const highlights = [
@@ -9,9 +9,9 @@ const AboutSection = () => {
       description: "Writing maintainable, scalable code with best practices",
     },
     {
-      icon: Palette,
-      title: "Design Focus",
-      description: "Creating beautiful interfaces with attention to detail",
+      icon: Lock,
+      title: "Security",
+      description: "Creating secure and reliable software solutions",
     },
     {
       icon: Rocket,
@@ -31,7 +31,7 @@ const AboutSection = () => {
             </span>
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-8">
-            Turning ideas into reality
+            Who I Am
           </h2>
         </AnimatedSection>
 
@@ -39,20 +39,21 @@ const AboutSection = () => {
           <AnimatedSection delay={0.1}>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                I'm a passionate developer with over 5 years of experience building 
-                web applications. My journey started with curiosity about how things 
-                work on the internet, and it has evolved into a career I truly love.
+                I'm a Computer Science student with a mix of co-op and freelance experience, 
+                building secure, scalable applications across e-commerce, SaaS, and automation.
               </p>
               <p className="leading-relaxed">
-                I specialize in full-stack development, working with modern technologies 
-                like React, TypeScript, Node.js, and various cloud platforms. I believe 
-                in writing clean, maintainable code and creating user experiences that 
-                are both beautiful and functional.
+                In my co-ops, I contributed to enterprise-grade solutions at Kinaxis and Seequent,
+                gaining hands-on experience in full-stack development and optimising infrastructures
+                for performance and reliability. I also developed real-impact coop projects to solve
+                existing day-to-day issues within the company, gaining impressive coop performance ratings.
               </p>
               <p className="leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open source projects, or sharing knowledge with the 
-                developer community.
+                Outside of co-op, I freelanced with Shopiz, where I delivered
+                end-to-end features like custom Shopify integrations resulting in saving $6000 on subscription cost
+                and role-based access systems secured with HMAC authentication. I've also built innovative problem solving
+                projects like Orchestra (a bot marketplace and scheduler platform) and Verboverse, allowing people with no
+                common languageto communicate, showcasing both technical depth and leadership.
               </p>
             </div>
           </AnimatedSection>

@@ -16,14 +16,6 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-primary font-medium tracking-widest uppercase text-sm mb-6"
-          >
-            Welcome to my portfolio
-          </motion.p>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -41,8 +33,7 @@ const HeroSection = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light"
           >
-            A passionate full-stack developer crafting beautiful digital experiences 
-            with modern technologies and thoughtful design.
+            A software developer passionate about creating innovative and impactful solutions and learning new technologies.
           </motion.p>
 
           <motion.div
@@ -52,7 +43,7 @@ const HeroSection = () => {
             className="flex items-center justify-center gap-4"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/rubaizmomin"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass-card hover:bg-primary/10 transition-all duration-300 group"
@@ -60,7 +51,7 @@ const HeroSection = () => {
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/rubaizmomin"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass-card hover:bg-primary/10 transition-all duration-300 group"
@@ -89,7 +80,7 @@ const HeroSection = () => {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="flex flex-col items-center gap-2 text-muted-foreground"
         >
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
+          <span className="text-xs tracking-widest uppercase">learn more about me</span>
           <ArrowDown className="w-4 h-4" />
         </motion.div>
       </motion.div>
