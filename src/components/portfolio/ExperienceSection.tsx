@@ -1,10 +1,13 @@
 import AnimatedSection from "../AnimatedSection";
 import { motion } from "framer-motion";
 
+const kinaxisLogo = "/kinaxis.png";
+const seequentLogo = "/seequent.png";
+const akesLogo = "/akes.png";
 const experiences = [
   {
     title: "Part-Time Full-Stack Developer",
-    company: "Shopiz",
+    company: "Shopiz, Canada",
     period: "May 2025 - Present",
     description:
       `Engineered a cost-effective solution to a budget challenge by developing a custom Shopify integration for order creation and invoicing, implementing access controls to safeguard sensitive data and reduce recurring subscription expenses by $6,000+ per year.
@@ -15,7 +18,8 @@ const experiences = [
   },
   {
     title: "Software Developer Co-op",
-    company: "Kinaxis",
+    company: "Kinaxis, Canada",
+    companyLogo: kinaxisLogo,
     period: "January 2025 - April 2025",
     description:
       `Resolved 40+ accessibility violations across Maestro™ Workflows, ensuring compliance with a11y standards and maintaining
@@ -26,7 +30,8 @@ Improved UI consistency and performance by standardising reusable components and
   },
   {
     title: "Test Framework Developer Co-op",
-    company: "Kinaxis",
+    company: "Kinaxis, Canada",
+    companyLogo: kinaxisLogo,
     period: "September 2024 - December 2024",
     description:
       `Member of the core team to come up with the idea of migrating from TestCafe to Playwright to improve test stability and test runtime.
@@ -41,7 +46,8 @@ without over-execution.`,
 
     {
     title: "Platform Engineer Co-op",
-    company: "Seequent",
+    company: "Seequent, Canada",
+    companyLogo: seequentLogo,
     period: "January 2023 - April 2023",
     description:
       `Re-architected CI/CD pipelines by migrating 6 infrastructures from Bamboo/VSphere to GitHub Actions + Azure, reducing
@@ -57,7 +63,8 @@ cache dependencies.`,
 
       {
     title: "Automation Engineer Co-op",
-    company: "Seequent",
+    company: "Seequent, Canada",
+    companyLogo: seequentLogo,
     period: "September 2022 - December 2022",
     description:
       `Debugged 312 test automation failures, reducing regression failure rate from 23% to 0% in Oasis Montaj 2022.2.0.
@@ -66,6 +73,20 @@ Authored 73 new GUI test cases in Ranorex and improved the reliability of comple
 images, leading to improving overall test coverage by 4%.
 `,
     technologies: ["C#", ".NET", "Ranorex", "VSphere", "Bamboo"],
+  },
+    {
+    title: "Programming Mentor",
+    company: "Aga Khan Education Service, India",
+    companyLogo: akesLogo,
+    period: "April 2020 - September 2020",
+    description:
+      `Designed and delivered weekly lessons introducing 13 middle-year students to Scratch, then advancing into C programming fundamentals.
+
+Authored comprehensive learning resources and assignments, enabling staff reuse and improving student comprehension.
+
+Received 100% positive feedback from students and supervisors for clarity of instruction, enabling students to complete projects ahead of schedule.
+`,
+    technologies: ["Scratch", "C"],
   },
 ];
 
@@ -113,9 +134,18 @@ const ExperienceSection = () => {
                       <h3 className="font-display text-xl font-semibold mt-2">
                         {exp.title}
                       </h3>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        {exp.company}
-                      </p>
+                      <div className="flex items-center gap-2 mt-1">
+                        {exp.companyLogo && (
+                          <img 
+                            src={exp.companyLogo} 
+                            alt={`${exp.company} logo`}
+                            className="w-6 h-6 rounded object-cover"
+                          />
+                        )}
+                        <p className="text-muted-foreground text-sm">
+                          {exp.company}
+                        </p>
+                      </div>
                       <p className="text-muted-foreground mt-4 text-sm leading-relaxed whitespace-pre-line">
                         {exp.description}
                       </p>

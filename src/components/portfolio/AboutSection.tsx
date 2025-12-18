@@ -5,7 +5,7 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: Code2,
-      title: "Clean Code",
+      title: "Best Practices",
       description: "Writing maintainable, scalable code with best practices",
     },
     {
@@ -46,14 +46,8 @@ const AboutSection = () => {
                 In my co-ops, I contributed to enterprise-grade solutions at Kinaxis and Seequent,
                 gaining hands-on experience in full-stack development and optimising infrastructures
                 for performance and reliability. I also developed real-impact coop projects to solve
-                existing day-to-day issues within the company, gaining impressive coop performance ratings.
-              </p>
-              <p className="leading-relaxed">
-                Outside of co-op, I freelanced with Shopiz, where I delivered
-                end-to-end features like custom Shopify integrations resulting in saving $6000 on subscription cost
-                and role-based access systems secured with HMAC authentication. I've also built innovative problem solving
-                projects like Orchestra (a bot marketplace and scheduler platform) and Verboverse, allowing people with no
-                common languageto communicate, showcasing both technical depth and leadership.
+                existing day-to-day issues within the company, gaining impressive coop performance ratings. Outside 
+                of coop, I freelanced as a full-stack developer and delivered custom shopify integration to save $6000 in subscription cost.
               </p>
             </div>
           </AnimatedSection>

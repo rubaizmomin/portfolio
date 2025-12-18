@@ -2,20 +2,22 @@ import AnimatedSection from "../AnimatedSection";
 import { GraduationCap, BookOpen, Calendar, MapPin } from "lucide-react";
 
 const coursework = [
-  "Software Engineering",
+  "Software Tools and Systems Programming",
   "Software Design",
   "Database Management Systems",
+   "Web Programming",
   "Algorithm Design and Analysis",
-  "Web Programming",
   "Computer Networks",
+  "Design and Analysis of Data Structures",
+  "Information Networks",
   "Computer and Network Security",
   "Artificial Intelligence",
   "Engineering Large Software Systems",
-  "Data Structures",
-  "Computational Complexity",
-  "Systems Programming",
+    "Operating Systems",
+  "Computability and Computational Complexity"
 ];
 
+const uoftLogo = "/uoft.png";
 const EducationSection = () => {
   return (
     <section id="education" className="relative bg-secondary/30">
@@ -42,7 +44,7 @@ const EducationSection = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-display text-2xl font-bold">
-                    B.Sc Computer Science
+                    Bachelor's in Computer Science
                   </h3>
                   <p className="text-primary font-medium mt-1">
                     Software Engineering Stream (Co-op)
@@ -53,14 +55,20 @@ const EducationSection = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="w-4 h-4 text-primary" />
-                  <span>University of Toronto, Toronto, CA</span>
+                  <div className="flex items-center gap-2">
+                    <img 
+                            src={uoftLogo} 
+                            alt={`University of Toronto logo`}
+                            className="w-6 h-6 rounded object-cover"
+                    />
+                    <span>University of Toronto, Toronto, CA</span>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Calendar className="w-4 h-4 text-primary" />
                   <span>September 2020 - April 2026</span>
                 </div>
               </div>
-
               <p className="text-muted-foreground leading-relaxed">
                 Pursuing a comprehensive computer science education with a focus
                 on software engineering principles, system design, and practical

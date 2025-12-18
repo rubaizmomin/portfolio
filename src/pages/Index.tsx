@@ -7,7 +7,7 @@ import ProjectsSection from "@/components/portfolio/ProjectsSection";
 import SkillsSection from "@/components/portfolio/SkillsSection";
 import ContactSection from "@/components/portfolio/ContactSection";
 import Footer from "@/components/portfolio/Footer";
-
+import ImpactProjectsSection from "@/components/portfolio/ImpactProjectsSection";
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
@@ -16,6 +16,7 @@ const Index = () => {
       <AboutSection />
       <ExperienceSection />
       <EducationSection />
+      <ImpactProjectsSection />
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />

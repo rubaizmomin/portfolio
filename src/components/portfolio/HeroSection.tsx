@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+// import profilePhoto from "../../../public/profilePhoto.JPEG";
 
+const profilePhoto = "/profilePhoto.JPEG";
 const HeroSection = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
@@ -16,6 +18,22 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
         >
+        {/* Profile Photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1, duration: 0.7 }}
+            className="mb-8 flex justify-center"
+          >
+            <div className="relative">
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl scale-110" />
+              <img
+                src={profilePhoto}
+                alt="Rubaiz Momin"
+                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-primary/30 shadow-lg"
+              />
+            </div>
+          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
