@@ -1,1 +1,3 @@
-# rubaizmomin.github.io
+# to run locally
+- npm i
+- npm run dev
