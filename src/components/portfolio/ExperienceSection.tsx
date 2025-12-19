@@ -1,5 +1,4 @@
 import AnimatedSection from "../AnimatedSection";
-import { motion } from "framer-motion";
 
 const kinaxisLogo = "/kinaxis.png";
 const seequentLogo = "/seequent.png";

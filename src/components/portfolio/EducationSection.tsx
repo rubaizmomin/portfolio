@@ -5,9 +5,9 @@ const coursework = [
   "Software Tools and Systems Programming",
   "Software Design",
   "Database Management Systems",
-   "Web Programming",
   "Algorithm Design and Analysis",
   "Computer Networks",
+    "Web Programming",
   "Design and Analysis of Data Structures",
   "Information Networks",
   "Computer and Network Security",
@@ -20,7 +20,7 @@ const coursework = [
 const uoftLogo = "/uoft.png";
 const EducationSection = () => {
   return (
-    <section id="education" className="relative bg-secondary/30">
+    <section id="education" className="relative">
       <div className="section-container">
         <AnimatedSection>
           <div className="flex items-center gap-4 mb-4">

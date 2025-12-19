@@ -20,10 +20,10 @@ const skillCategories = [
   {
     title: "Testing",
     icon: TestTube,
-    skills: ["Jest", "MSTest", "TestCafe", "Playwright", "Ranorex", "Unit Testing", "Integration Testing", "E2E Testing"],
+    skills: ["Jest", "MSTest", "TestCafe", "Playwright", "Ranorex", "Unit", "Integration", "E2E"],
   },
   {
-    title: "Developer Tools",
+    title: "Developer Tools and OS",
     icon: Wrench,
     skills: ["Jenkins", "Git", "GitHub Actions", "Bamboo", "Kubernetes", "Selenium", "Docker", "Azure", "Linux", "Unix"],
   },
@@ -31,7 +31,7 @@ const skillCategories = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="relative bg-secondary/30">
+    <section id="skills" className="relative">
       <div className="section-container">
         <AnimatedSection>
           <div className="flex items-center gap-4 mb-4">
@@ -41,7 +41,7 @@ const SkillsSection = () => {
             </span>
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-12">
-            Technical Expertise
+            Technical Skills
           </h2>
         </AnimatedSection>
 

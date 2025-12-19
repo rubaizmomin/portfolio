@@ -1,6 +1,26 @@
 import AnimatedSection from "../AnimatedSection";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
-import { Button } from "../ui/button";
+import { Github, Linkedin, Mail } from "lucide-react";
+
+const socialLinks = [
+  {
+    name: "GitHub",
+    icon: Github,
+    url: "https://github.com/rubaizmomin",
+    username: "rubaizmomin",
+  },
+    {
+    name: "Email",
+    icon: Mail,
+    url: "mailto:rubaizmomin@gmail.com",
+    username: "rubaizmomin@gmail.com",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    url: "https://linkedin.com/in/rubaizmomin",
+    username: "in/rubaizmomin",
+  },
+];
 
 const ContactSection = () => {
   return (
@@ -14,104 +34,37 @@ const ContactSection = () => {
             </span>
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Let's work together
+            Let's Connect
           </h2>
           <p className="text-muted-foreground max-w-xl mb-12">
-            Have a project in mind? I'd love to hear about it. Drop me a message
-            and let's create something amazing together.
+            Feel free to reach out for opportunities, or just
+            to say hello.
           </p>
         </AnimatedSection>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <AnimatedSection delay={0.1}>
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Name</label>
-                  <input
-                    type="text"
-                    placeholder="Rubaiz Momin"
-                    className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all"
-                  />
+        <AnimatedSection delay={0.1}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            {socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card px-8 py-6 flex items-center gap-4 hover:border-primary/50 transition-all duration-300 group w-full sm:w-auto"
+              >
+                <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                  <link.icon className="w-6 h-6" />
                 </div>
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Email</label>
-                  <input
-                    type="email"
-                    placeholder="rubaizmomin@gmail.com"
-                    className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all"
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="text-sm font-medium mb-2 block">Subject</label>
-                <input
-                  type="text"
-                  placeholder="Project inquiry"
-                  className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all"
-                />
-              </div>
-              <div>
-                <label className="text-sm font-medium mb-2 block">Message</label>
-                <textarea
-                  rows={5}
-                  placeholder="Tell me about your project..."
-                  className="w-full px-4 py-3 rounded-lg bg-secondary border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all resize-none"
-                />
-              </div>
-              <Button className="w-full md:w-auto px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90 font-medium">
-                Send Message
-                <Send className="w-4 h-4 ml-2" />
-              </Button>
-            </form>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.2}>
-            <div className="space-y-6">
-              <div className="glass-card p-6 flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-primary/10 text-primary">
-                  <Mail className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Email</h3>
-                  <a
-                    href="mailto:rubaizmomin@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    rubaizmomin@gmail.com
-                  </a>
-                </div>
-              </div>
-
-              <div className="glass-card p-6 flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-primary/10 text-primary">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Phone</h3>
-                  <a
-                    href="tel:+1234567890"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +1 (234) 567-890
-                  </a>
-                </div>
-              </div>
-
-              <div className="glass-card p-6 flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-primary/10 text-primary">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Location</h3>
-                  <p className="text-muted-foreground">
-                    San Francisco, California
+                  <h3 className="font-display font-semibold">{link.name}</h3>
+                  <p className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                    {link.username}
                   </p>
                 </div>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
+              </a>
+            ))}
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );

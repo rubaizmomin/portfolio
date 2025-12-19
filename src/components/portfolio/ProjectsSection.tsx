@@ -3,41 +3,43 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Verboverse",
     description:
-      "A full-featured online store with real-time inventory, payment processing, and admin dashboard.",
-    technologies: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+      `Led a 3-member team to develop a video/audio translation platform that supports 50+ languages for real-time
+cross-language communication.
+Designed backend peer connections using WebRTC + MongoDB, supporting lengthy meetings, text channels and live
+translation delivery.
+Built and deployed a RESTful API for P2P connections, chat persistence, and email notifications, improving reliability and user
+experience`,
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "WebRTC", "Google Translate API"],
+    image: "/verboverse.png",
+    githubUrl: "https://github.com/rubaizmomin/project-snack-overflow",
   },
   {
-    title: "Task Management App",
-    description:
-      "Collaborative project management tool with real-time updates, drag-and-drop, and team features.",
-    technologies: ["React", "Firebase", "TypeScript", "Framer Motion"],
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "Routing Algorithm Simulator",
+    description: `Created a routing simulation to compare Forward Search Algorithm (Dijkstra) and Distance Vector Algorithm (Bellman Ford)
+on metrics like algorithm runtime, stabilisation time on link failures varying across different types of topologies.
+Developed the link failure and recovery feature which runs parallel to the simulation, seeing real-time behaviour of the
+network due to random link failures/recovery to study network stabilisation.
+Parsed miniedit graph to translate to an adjacency list to run algorithms and parsed adjacency list back to miniEdit to change
+link states due to link failures/recovery.`,
+    technologies: ["Mininet", "Python", "NetworkX"],
+    image: "/routing.avif",
+    githubUrl: "https://github.com/rubaizmomin/routing-algorithm-simulation",
   },
   {
-    title: "AI Content Generator",
+    title: "Conductor",
     description:
-      "An AI-powered application that generates marketing copy, blog posts, and social media content.",
-    technologies: ["Python", "OpenAI", "FastAPI", "React"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Real Estate Platform",
-    description:
-      "Property listing platform with advanced search, virtual tours, and mortgage calculator.",
-    technologies: ["Vue.js", "Node.js", "MongoDB", "Mapbox"],
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
+      `Created a microservice-based workflow scheduler that executes tasks based on dates and conditional predicates, enabling
+        automated and flexible orchestration of processes.
+        Built an integrated Bot Store within the application, allowing users to browse and download bots contributed by open-source
+        developers, fostering community-driven extensibility
+        Problem solved the execution integrity in case of system crash while executing bot scripts, ensuring consistent state and
+        quick recovery using a high level of journaling.`,
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Electron", "Microservices"],
+    image: "/conductor.png",
+    githubUrl: "https://github.com/rubaizmomin/Conductor",
+  }
 ];
 
 const ProjectsSection = () => {

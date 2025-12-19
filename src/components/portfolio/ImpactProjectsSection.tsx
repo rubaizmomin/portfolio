@@ -3,26 +3,32 @@ import { ExternalLink, Users } from "lucide-react";
 
 const impactProjects = [
   {
-    title: "Community Health Tracker",
+    title: "GitHub Actions Dashboard",
     description:
-      "A health monitoring platform used by 10,000+ users to track wellness metrics and connect with healthcare providers.",
-    impact: "10,000+ active users",
-    technologies: ["React", "Node.js", "PostgreSQL"],
-    liveUrl: "#",
+      `A centralized dashboard for monitoring 20+ GitHub Actions workflows across multiple repositories to get real-time insights for Seequent.`,
+    impact: "500+ developers at Seequent",
+    technologies: ["React.js", "Node.js", "Express.js", "GitHub API"],
   },
   {
-    title: "Local Business Directory",
+    title: "Delta",
     description:
-      "Helping small businesses gain visibility in their communities with an accessible, searchable directory platform.",
-    impact: "500+ businesses listed",
-    technologies: ["Next.js", "Supabase", "Tailwind"],
-    liveUrl: "#",
+      "A web app that allows developers to configure personalized test suite collection from 100+ test suites and view relevant results from 250,000+ daily test runs, reducing unncessary noise and saving time.",
+    impact: "1000+ developers at Kinaxis",
+    technologies: ["ASP.NET Blazor Webassembly", "ASP.NET Web API", "SSMS", "Entity Framework"],
+  },
+    {
+    title: "Apache Superset (Ongoing)",
+    description:
+      "Migration of react-dnd (unmaintained) to dnd-kit (actively maintained) for improved drag-and-drop performance and accessibility in Apache Superset, an open-source data visualization tool used by thousands of organizations worldwide.",
+    impact: "1000+ organisations",
+    technologies: ["Typescript", "dnd-kit", "React.js", "Node.js"],
+    liveUrl: "https://github.com/apache/superset/pull/36301"
   },
 ];
 
 const ImpactProjectsSection = () => {
   return (
-    <section id="impact-projects" className="relative">
+    <section id="impact" className="relative">
       <div className="section-container">
         <AnimatedSection>
           <div className="flex items-center gap-4 mb-4">
@@ -47,12 +53,14 @@ const ImpactProjectsSection = () => {
                   <h3 className="font-display text-xl font-semibold">
                     {project.title}
                   </h3>
-                  <a
-                    href={project.liveUrl}
-                    className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  )}
                 </div>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                   {project.description}
