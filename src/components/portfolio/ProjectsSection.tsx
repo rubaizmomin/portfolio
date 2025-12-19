@@ -13,6 +13,7 @@ Built and deployed a RESTful API for P2P connections, chat persistence, and emai
 experience`,
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "WebRTC", "Google Translate API"],
     image: "/verboverse.png",
+    liveUrl: "",
     githubUrl: "https://github.com/rubaizmomin/project-snack-overflow",
   },
   {
@@ -25,6 +26,7 @@ Parsed miniedit graph to translate to an adjacency list to run algorithms and pa
 link states due to link failures/recovery.`,
     technologies: ["Mininet", "Python", "NetworkX"],
     image: "/routing.avif",
+    liveUrl: "",
     githubUrl: "https://github.com/rubaizmomin/routing-algorithm-simulation",
   },
   {
@@ -38,6 +40,7 @@ link states due to link failures/recovery.`,
         quick recovery using a high level of journaling.`,
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Electron", "Microservices"],
     image: "/conductor.png",
+    xliveUrl: "",
     githubUrl: "https://github.com/rubaizmomin/Conductor",
   }
 ];
@@ -61,7 +64,7 @@ const ProjectsSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
-              <div className="glass-card overflow-hidden group">
+              <div className="glass-card overflow-hidden group p-6 h-full flex flex-col hover:border-amber-400 transition-all duration-300">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
@@ -69,12 +72,14 @@ const ProjectsSection = () => {
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-3">
-                    <a
-                      href={project.liveUrl}
-                      className="p-2 rounded-full bg-primary text-primary-foreground hover:scale-110 transition-transform"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        className="p-2 rounded-full bg-primary text-primary-foreground hover:scale-110 transition-transform"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    )}
                     <a
                       href={project.githubUrl}
                       className="p-2 rounded-full bg-primary text-primary-foreground hover:scale-110 transition-transform"
@@ -83,7 +88,7 @@ const ProjectsSection = () => {
                     </a>
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="mt-4 flex-1">
                   <h3 className="font-display text-xl font-semibold mb-2">
                     {project.title}
                   </h3>
@@ -94,7 +99,7 @@ const ProjectsSection = () => {
                     {project.technologies.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 text-xs rounded-full bg-secondary text-secondary-foreground"
+                        className="px-3 py-1.5 bg-secondary/80 text-secondary-foreground rounded-full text-sm font-medium hover:bg-primary/20 hover:text-primary transition-colors duration-200"
                       >
                         {tech}
                       </span>

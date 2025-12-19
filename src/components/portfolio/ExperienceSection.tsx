@@ -123,7 +123,7 @@ const ExperienceSection = () => {
                   {/* Content */}
                   <div className="md:w-1/2 pl-8 md:pl-0">
                     <div
-                      className={`glass-card p-6 hover:border-primary/30 transition-all duration-300 ${
+                      className={`glass-card p-6 hover:border-amber-400 transition-all duration-300 ${
                         index % 2 === 0 ? "md:mr-12" : "md:ml-12"
                       }`}
                     >
@@ -152,7 +152,7 @@ const ExperienceSection = () => {
                         {exp.technologies.map((tech, i) => (
                           <span
                             key={i}
-                            className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary"
+                            className="px-3 py-1.5 bg-secondary/80 text-secondary-foreground rounded-full text-sm font-medium hover:bg-primary/20 hover:text-primary transition-colors duration-200"
                           >
                             {tech}
                           </span>

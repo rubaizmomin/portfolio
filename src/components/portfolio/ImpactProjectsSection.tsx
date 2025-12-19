@@ -48,7 +48,7 @@ const ImpactProjectsSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {impactProjects.map((project, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
-              <div className="glass-card p-6 group hover:border-primary/50 transition-colors">
+              <div className="glass-card p-6 group hover:border-amber-400 transition-colors h-full flex flex-col">
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="font-display text-xl font-semibold">
                     {project.title}
@@ -62,18 +62,20 @@ const ImpactProjectsSection = () => {
                     </a>
                   )}
                 </div>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="flex items-center gap-2 mb-4 text-primary">
+                <div className="flex-1">
+                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+                </div>
+                <div className="mt-auto flex items-center gap-2 text-primary">
                   <Users className="w-4 h-4" />
                   <span className="text-sm font-medium">{project.impact}</span>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-4">
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 text-xs rounded-full bg-secondary text-secondary-foreground"
+                      className="px-3 py-1.5 bg-secondary/80 text-secondary-foreground rounded-full text-sm font-medium hover:bg-primary/20 hover:text-primary transition-colors duration-200"
                     >
                       {tech}
                     </span>

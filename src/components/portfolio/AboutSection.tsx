@@ -57,7 +57,7 @@ const AboutSection = () => {
               {highlights.map((item, index) => (
                 <div
                   key={index}
-                  className="glass-card p-6 hover:border-primary/30 transition-all duration-300 group"
+                  className="glass-card p-6 hover:border-amber-400 transition-all duration-300 group"
                 >
                   <div className="flex items-start gap-4">
                     <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">

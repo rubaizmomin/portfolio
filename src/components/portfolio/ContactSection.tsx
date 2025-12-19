@@ -50,7 +50,7 @@ const ContactSection = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-card px-8 py-6 flex items-center gap-4 hover:border-primary/50 transition-all duration-300 group w-full sm:w-auto"
+                className="glass-card px-8 py-6 flex items-center gap-4 hover:border-amber-400 transition-all duration-300 group w-full sm:w-auto"
               >
                 <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                   <link.icon className="w-6 h-6" />

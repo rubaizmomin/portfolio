@@ -48,7 +48,7 @@ const SkillsSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
-              <div className="glass-card p-6 h-full hover:border-primary/30 transition-all duration-300 group">
+              <div className="glass-card p-6 h-full hover:border-amber-400 transition-all duration-300 group">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2.5 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                     <category.icon className="w-5 h-5" />

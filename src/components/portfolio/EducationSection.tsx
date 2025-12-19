@@ -37,7 +37,7 @@ const EducationSection = () => {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Main Education Card */}
           <AnimatedSection delay={0.1}>
-            <div className="glass-card p-8 h-full hover:border-primary/30 transition-all duration-300 group">
+            <div className="glass-card p-8 h-full hover:border-amber-400 transition-all duration-300 group">
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-4 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                   <GraduationCap className="w-8 h-8" />
@@ -79,7 +79,7 @@ const EducationSection = () => {
 
           {/* Coursework Card */}
           <AnimatedSection delay={0.2}>
-            <div className="glass-card p-8 h-full hover:border-primary/30 transition-all duration-300">
+            <div className="glass-card p-8 h-full hover:border-amber-400 transition-all duration-300">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 rounded-lg bg-primary/10 text-primary">
                   <BookOpen className="w-6 h-6" />
