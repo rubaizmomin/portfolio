@@ -22,7 +22,7 @@ const impactProjects = [
       "Migration of react-dnd (unmaintained) to dnd-kit (actively maintained) for improved drag-and-drop performance and accessibility in Apache Superset, an open-source data visualization tool used by thousands of organizations worldwide.",
     impact: "1000+ organisations",
     technologies: ["Typescript", "dnd-kit", "React.js", "Node.js"],
-    liveUrl: "https://github.com/apache/superset/pull/36301"
+    liveUrl: "https://github.com/apache/superset/pull/36778"
   },
 ];
 
