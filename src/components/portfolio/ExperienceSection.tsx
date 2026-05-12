@@ -28,7 +28,7 @@ Improved UI consistency and performance by standardising reusable components and
     technologies: ["Typescript", "React.js", "Lighthouse", "Jest a11y"],
   },
   {
-    title: "Test Framework Developer Co-op",
+    title: "Software Developer in Test Co-op",
     company: "Kinaxis, Canada",
     companyLogo: kinaxisLogo,
     period: "September 2024 - December 2024",
@@ -61,7 +61,7 @@ cache dependencies.`,
   },
 
       {
-    title: "Automation Engineer Co-op",
+    title: "Software Developer in Test Co-op",
     company: "Seequent, Canada",
     companyLogo: seequentLogo,
     period: "September 2022 - December 2022",
