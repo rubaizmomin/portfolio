@@ -2,8 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -14,6 +14,9 @@ const queryClient = new QueryClient();
 
 function RouteAnalytics() {
   const location = useLocation();
+  const navigate = useNavigate();
+  const ran = useRef(false);
+
   useEffect(() => {
     try {
       const win = window as any;
@@ -26,6 +29,21 @@ function RouteAnalytics() {
       // ignore
     }
   }, [location.pathname]);
+
+  // On initial load, if URL has ?via=resume, navigate to /resume inside the SPA
+  useEffect(() => {
+    if (ran.current) return;
+    ran.current = true;
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('via') === 'resume') {
+        navigate('/resume', { replace: true });
+      }
+    } catch (e) {
+      // ignore
+    }
+  }, [navigate]);
+
   return null;
 }
 

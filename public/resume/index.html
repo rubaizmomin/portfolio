@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0;url=/?via=resume" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Redirecting…</title>
+    <script>
+      // Fallback JS redirect if meta refresh is blocked
+      (function(){
+        try {
+          const target = '/?via=resume';
+          if (location.pathname !== target) {
+            location.replace(target);
+          }
+        } catch (e) { /* ignore */ }
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting to resume...
+  </body>
+</html>
