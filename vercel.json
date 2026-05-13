@@ -2,7 +2,6 @@
   "cleanUrls": true,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "^/resume(?:/.*)?$", "dest": "/index.html" },
     { "src": "/.*", "dest": "/index.html" }
   ]
 }
