@@ -1,7 +1,16 @@
 import AnimatedSection from "../AnimatedSection";
 import { ExternalLink, Users } from "lucide-react";
 
-const impactProjects = [
+type Project = {
+  title: string;
+  description: string;
+  impact: string;
+  technologies: string[];
+  liveUrl?: string;
+  liveURL?: string;
+};
+
+const impactProjects: Project[] = [
   {
     title: "GitHub Actions Dashboard",
     description:
@@ -15,15 +24,7 @@ const impactProjects = [
       "A web app that allows developers to configure personalized test suite collection from 100+ test suites and view relevant results from 250,000+ daily test runs, reducing unncessary noise and saving time.",
     impact: "1000+ developers at Kinaxis",
     technologies: ["ASP.NET Blazor Webassembly", "ASP.NET Web API", "SSMS", "Entity Framework"],
-  },
-    {
-    title: "Apache Superset (Ongoing)",
-    description:
-      "Migration of react-dnd (unmaintained) to dnd-kit (actively maintained) for improved drag-and-drop performance and accessibility in Apache Superset, an open-source data visualization tool used by thousands of organizations worldwide.",
-    impact: "1000+ organisations",
-    technologies: ["Typescript", "dnd-kit", "React.js", "Node.js"],
-    liveUrl: "https://github.com/apache/superset/pull/36778"
-  },
+  }
 ];
 
 const ImpactProjectsSection = () => {

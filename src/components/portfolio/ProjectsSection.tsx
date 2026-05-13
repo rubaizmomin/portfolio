@@ -16,6 +16,19 @@ experience`,
     liveUrl: "",
     githubUrl: "https://github.com/rubaizmomin/project-snack-overflow",
   },
+    {
+    title: "Contriplace",
+    description:
+      `Built a FastAPI and SQLite service that syncs open-source GitHub issues via GraphQL, filters out assigned or
+actively worked-on issues, and exposes discoverable contribution opportunities through REST endpoints.
+Integrated LLM-based issue classification with batching, model fallback, and rate-limit handling to categorise issues
+by domain and score difficulty on a 1-10 scale.
+`,
+    technologies: ["FastAPI", "Python", "GraphQL", "Google AI Studio", "SQLite"],
+    image: "/contriplace.png",
+    liveUrl: "",
+    githubUrl: "https://github.com/rubaizmomin/contriplace",
+  },
   {
     title: "Routing Algorithm Simulator",
     description: `Created a routing simulation to compare Forward Search Algorithm (Dijkstra) and Distance Vector Algorithm (Bellman Ford)
