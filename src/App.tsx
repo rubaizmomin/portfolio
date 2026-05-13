@@ -30,14 +30,17 @@ function RouteAnalytics() {
     }
   }, [location.pathname]);
 
-  // On initial load, if URL has ?via=resume, navigate to /resume inside the SPA
+  // On initial load, if URL has ?via=resume or ?via=instagram, navigate inside the SPA
   useEffect(() => {
     if (ran.current) return;
     ran.current = true;
     try {
       const params = new URLSearchParams(window.location.search);
-      if (params.get('via') === 'resume') {
+      const via = params.get('via');
+      if (via === 'resume') {
         navigate('/resume', { replace: true });
+      } else if (via === 'instagram') {
+        navigate('/instagram', { replace: true });
       }
     } catch (e) {
       // ignore
@@ -59,6 +62,7 @@ const App = () => (
           <RouteAnalytics />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/instagram" element={<Index />} />
             <Route path="/resume" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
