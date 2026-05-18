@@ -15,14 +15,14 @@ const impactProjects: Project[] = [
     title: "GitHub Actions Dashboard",
     description:
       `A centralized dashboard for monitoring 20+ GitHub Actions workflows across multiple repositories to get real-time insights for Seequent.`,
-    impact: "500+ developers at Seequent",
+    impact: "Developers at Seequent",
     technologies: ["React.js", "Node.js", "Express.js", "GitHub API"],
   },
   {
     title: "Delta",
     description:
       "A web app that allows developers to configure personalized test suite collection from 100+ test suites and view relevant results from 250,000+ daily test runs, reducing unncessary noise and saving time.",
-    impact: "1000+ developers at Kinaxis",
+    impact: "Developers at Kinaxis",
     technologies: ["ASP.NET Blazor Webassembly", "ASP.NET Web API", "SSMS", "Entity Framework"],
   }
 ];
