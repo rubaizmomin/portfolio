@@ -23,7 +23,6 @@ access and HMAC authentication, dynamic live chat availability and payment-speci
     period: "January 2025 - April 2025",
     description:
       `- Resolved 40+ accessibility violations across Maestro Workflows, ensuring compliance with WCAG standards, raising overall accessibility page scores from poor to good.\n
-
 - Improved UI consistency and performance by standardising reusable components and fixing critical logical issues in workflow activities, like preventing invalid resource creation during import/export operations.`,
     technologies: ["Typescript", "React.js", "Lighthouse", "Jest a11y"],
   },
@@ -34,7 +33,6 @@ access and HMAC authentication, dynamic live chat availability and payment-speci
     period: "September 2024 - December 2024",
     description:
       `- Built robust test frameworks to reduce test flakiness and authored 60+ automated/unit tests in TestCafe and MSTest for 30+ Maestro Workflow features, improving test reusability, and reducing QA time.\n
-
 - Part of a hackathon team that successfully pitched and secured approval for migrating TestCafe tests to Playwright; built a regex-based conversion POC automating 80% of syntax translation to demonstrate migration feasibility.`,
     technologies: ["Typescript", "C#", "React.js", "Playwright", "TestCafe", "MSTest"],
   },
@@ -46,7 +44,6 @@ access and HMAC authentication, dynamic live chat availability and payment-speci
     period: "January 2023 - April 2023",
     description:
       `- Re-architected CI pipelines by migrating 6 infrastructures from Bamboo/vSphere to GitHub Actions and Azure, reducing infrastructure costs by $10,000 annually and reducing website test automation CI by 50% through parallelized test execution.\n
-
 - Designed a GitHub Workflow Dashboard for 20+ CI/CD pipelines, providing near real-time visibility into build/test status for engineering teams.`,
     technologies: ["YAML", "Python", "GitHub Actions", "Azure", "Bamboo", "Selenium"],
   },
@@ -68,7 +65,6 @@ access and HMAC authentication, dynamic live chat availability and payment-speci
     period: "April 2020 - September 2020",
     description:
       `- Designed and delivered weekly lessons introducing 13 middle-year students to Scratch, then advancing into C programming fundamentals.\n
-
 - Received 100% positive feedback from students and supervisors for clarity of instruction, enabling students to complete projects ahead of schedule.
 `,
     technologies: ["Scratch", "C"],
