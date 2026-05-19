@@ -21,7 +21,7 @@ const impactProjects: Project[] = [
   {
     title: "Delta",
     description:
-      "A web app that allows developers to configure personalized test suite collection from 100+ test suites and view relevant results from 250,000+ daily test runs, reducing unncessary noise and saving time.",
+      "A web app that allows developers to configure personalized test suite collection and view relevant results from 250,000+ daily test runs, reducing unncessary noise and saving time.",
     impact: "Developers at Kinaxis",
     technologies: ["ASP.NET Blazor Webassembly", "ASP.NET Web API", "SSMS", "Entity Framework"],
   }
