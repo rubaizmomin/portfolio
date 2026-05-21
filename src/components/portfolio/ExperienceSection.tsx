@@ -49,7 +49,7 @@ access and HMAC authentication, dynamic live chat availability and payment-speci
   },
 
       {
-    title: "Software Developer in Test Intern",
+    title: "QA Automation Engineer Intern",
     company: "Seequent, Canada",
     companyLogo: seequentLogo,
     period: "September 2022 - December 2022",
