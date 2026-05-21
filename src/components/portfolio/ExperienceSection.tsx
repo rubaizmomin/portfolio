@@ -55,7 +55,7 @@ access and HMAC authentication, dynamic live chat availability and payment-speci
     period: "September 2022 - December 2022",
     description:
       `- Debugged 312 test automation failures, reducing regression failure rate to 0% in Oasis Montaj 2022.2.0.\n
-- Authored 73 new GUI test cases in Ranorex using C# .NET framework and improved the reliability of complex gestures like drag and drop by maintaining testing framework leading to improving overall test coverage by 4%.`,
+- Authored 73 new GUI test cases in Ranorex using C# .NET framework and improved the reliability of complex gestures and improving overall test coverage by 4%.`,
     technologies: ["C#", ".NET", "Ranorex", "VSphere", "Bamboo"],
   },
     {
