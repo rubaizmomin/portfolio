@@ -32,7 +32,7 @@ access and HMAC authentication, dynamic live chat availability and payment-speci
     companyLogo: kinaxisLogo,
     period: "September 2024 - December 2024",
     description:
-      `- Built robust test frameworks to reduce test flakiness and authored 60+ automated/unit tests in TestCafe and MSTest for 30+ Maestro Workflow features, improving test reusability, and reducing QA time.\n
+      `- Built robust test frameworks to reduce test flakiness and authored 60+ automated tests in TestCafe and MSTest for 30+ Maestro Workflow features, improving test reusability, and reducing QA time.\n
 - Part of a hackathon team that successfully pitched and secured approval for migrating TestCafe tests to Playwright; built a regex-based conversion POC automating 80% of syntax translation to demonstrate migration feasibility.`,
     technologies: ["Typescript", "C#", "React.js", "Playwright", "TestCafe", "MSTest"],
   },
@@ -54,7 +54,7 @@ access and HMAC authentication, dynamic live chat availability and payment-speci
     companyLogo: seequentLogo,
     period: "September 2022 - December 2022",
     description:
-      `- Debugged 312 test automation failures, reducing regression failure rate from 23% to 0% in Oasis Montaj 2022.2.0.\n
+      `- Debugged 312 test automation failures, reducing regression failure rate to 0% in Oasis Montaj 2022.2.0.\n
 - Authored 73 new GUI test cases in Ranorex using C# .NET framework and improved the reliability of complex gestures like drag and drop by maintaining testing framework leading to improving overall test coverage by 4%.`,
     technologies: ["C#", ".NET", "Ranorex", "VSphere", "Bamboo"],
   },
