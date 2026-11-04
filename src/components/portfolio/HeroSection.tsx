@@ -51,7 +51,7 @@ const HeroSection = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light"
           >
-            I enjoy solving complex problems through thoughtful, creative work and building experiences that are both practical and impactful.
+            I’m a software engineer who enjoys turning messy problems into reliable, practical solutions — whether that means improving test confidence, reducing delivery friction, or building tools that help teams move faster.
           </motion.p>
 
           <motion.div

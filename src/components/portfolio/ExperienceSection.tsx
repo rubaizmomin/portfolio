@@ -24,7 +24,7 @@ const experiences = [
     period: "July 2026 - September 2026",
     description:
       `- Migrated Zuora's existing CSV-to-PostgreSQL ingestion workflow to Microsoft SQL Server, optimizing ingestion with BULK INSERT to reduce processing time by 35% across 1 GB of data and 183 tables.\n
-- Led remote SQL Server infrastructure setup and coordinated with the network team to establish secure laptop access, eliminating individual VM dependencies for 8 engineers and enabling potential annual infrastructure cost avoidance of $19,200.\n
+- Led remote SQL Server infrastructure setup and coordinated with the network team to establish secure laptop access, eliminating individual VM dependencies for 8 engineers and enabling potential annual infrastructure cost avoidance of $19,000+.\n
 - Developed SQL Server-driven validation utilities to query backend records and compare database values directly against Compass UI fields, strengthening end-to-end data integrity testing and enabling detection of UI-to-database discrepancies.`,
     technologies: ["Java", "Selenium", "SQL Server", "PostgreSQL"],
   },

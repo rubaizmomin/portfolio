@@ -39,15 +39,17 @@ const AboutSection = () => {
           <AnimatedSection delay={0.1}>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                I'm a Computer Science student with a mix of co-op and freelance experience, 
-                building secure, scalable applications across e-commerce, SaaS, and automation.
+                I’m someone who enjoys solving real problems with technology. Through co-op roles,
+                freelance work, and testing-focused development, I’ve built tools and systems that improve
+                reliability, reduce waste, and help teams ship with more confidence.
               </p>
               <p className="leading-relaxed">
-                In my co-ops, I contributed to enterprise-grade solutions at Kinaxis and Seequent,
-                gaining hands-on experience in full-stack development and optimising infrastructures
-                for performance and reliability. I also developed real-impact coop projects to solve
-                existing day-to-day issues within the company, gaining impressive coop performance ratings. Outside 
-                of coop, I freelanced as a full-stack developer and delivered custom shopify integration to save $6000 in subscription cost.
+                My work has included modernizing CI workflows, improving accessibility and UI consistency, and
+                automating critical quality checks across enterprise applications. At Enercare, I helped set up
+                remote SQL Server infrastructure and reduced reliance on individual VMs for 8 engineers saving $19,000+, creating a
+                more scalable and efficient testing setup. At Seequent, I helped reduce annual infrastructure costs
+                by $10,000 and cut website test automation CI time by 50%. Outside of work, I built
+                a custom Shopify integration that saved more than $6,000 annually in recurring subscription costs.
               </p>
             </div>
           </AnimatedSection>
