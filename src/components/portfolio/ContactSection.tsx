@@ -1,14 +1,15 @@
 import AnimatedSection from "../AnimatedSection";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons/SocialIcons";
 
 const socialLinks = [
   {
     name: "GitHub",
-    icon: Github,
+    icon: GitHubIcon,
     url: "https://github.com/rubaizmomin",
     username: "rubaizmomin",
   },
-    {
+  {
     name: "Email",
     icon: Mail,
     url: "mailto:rubaizmomin@gmail.com",
@@ -16,7 +17,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    icon: Linkedin,
+    icon: LinkedInIcon,
     url: "https://linkedin.com/in/rubaizmomin",
     username: "in/rubaizmomin",
   },

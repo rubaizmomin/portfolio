@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons/SocialIcons";
 
 const Footer = () => {
   return (
@@ -25,16 +25,18 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="GitHub"
             >
-              <Github className="w-5 h-5" />
+              <GitHubIcon className="w-5 h-5" />
             </a>
             <a
               href="https://linkedin.com/in/rubaizmomin"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="LinkedIn"
             >
-              <Linkedin className="w-5 h-5" />
+              <LinkedInIcon className="w-5 h-5" />
             </a>
             
           </div>

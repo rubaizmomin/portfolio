@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-// import profilePhoto from "../../../public/profilePhoto.JPEG";
+import { ArrowDown, Mail } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons/SocialIcons";
 
-const profilePhoto = "/profilePhoto.JPEG";
+const profilePhoto = "/profilePhoto.jpg";
 const HeroSection = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
@@ -65,16 +65,18 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass-card hover:bg-primary/10 transition-all duration-300 group"
+              aria-label="GitHub"
             >
-              <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              <GitHubIcon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
               href="https://linkedin.com/in/rubaizmomin"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass-card hover:bg-primary/10 transition-all duration-300 group"
+              aria-label="LinkedIn"
             >
-              <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              <LinkedInIcon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
               href="mailto:rubaizmomin@gmail.com"

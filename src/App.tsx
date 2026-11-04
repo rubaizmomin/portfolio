@@ -12,6 +12,17 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const queryClient = new QueryClient();
 
+type VercelWindow = Window & {
+  __VERCEL_ANALYTICS?: {
+    page?: () => void;
+  };
+  vercel?: {
+    analytics?: {
+      page?: () => void;
+    };
+  };
+};
+
 function RouteAnalytics() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -19,13 +30,13 @@ function RouteAnalytics() {
 
   useEffect(() => {
     try {
-      const win = window as any;
+      const win = window as VercelWindow;
       if (win.__VERCEL_ANALYTICS && typeof win.__VERCEL_ANALYTICS.page === "function") {
         win.__VERCEL_ANALYTICS.page();
       } else if (win.vercel && win.vercel.analytics && typeof win.vercel.analytics.page === "function") {
         win.vercel.analytics.page();
       }
-    } catch (e) {
+    } catch {
       // ignore
     }
   }, [location.pathname]);

@@ -1,5 +1,6 @@
 import AnimatedSection from "../AnimatedSection";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { GitHubIcon } from "@/components/icons/SocialIcons";
 
 const projects = [
   {
@@ -96,8 +97,9 @@ const ProjectsSection = () => {
                     <a
                       href={project.githubUrl}
                       className="p-2 rounded-full bg-primary text-primary-foreground hover:scale-110 transition-transform"
+                      aria-label="GitHub project"
                     >
-                      <Github className="w-4 h-4" />
+                      <GitHubIcon className="w-4 h-4" />
                     </a>
                   </div>
                 </div>

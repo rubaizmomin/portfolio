@@ -20,7 +20,7 @@ const skillCategories = [
   {
     title: "Testing",
     icon: TestTube,
-    skills: ["Jest", "MSTest", "TestCafe", "Playwright", "Ranorex", "Unit", "Integration", "E2E"],
+    skills: ["Jest", "MSTest", "TestCafe", "Playwright", "Ranorex", "Unit", "Integration", "E2E", "Cucumber", "DDT", "BDD", "Accessibility Testing"],
   },
   {
     title: "Developer Tools and OS",
