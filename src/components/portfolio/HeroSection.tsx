@@ -51,7 +51,7 @@ const HeroSection = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light"
           >
-            A software developer passionate about creating innovative and impactful solutions and learning new technologies.
+            I enjoy solving complex problems through thoughtful, creative work and building experiences that are both practical and impactful.
           </motion.p>
 
           <motion.div

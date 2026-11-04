@@ -4,7 +4,19 @@ const kinaxisLogo = "/kinaxis.png";
 const seequentLogo = "/seequent.png";
 const akesLogo = "/akes.png";
 const enercareLogo = "/enercare.jpeg";
+const omersLogo = "/omers.jpg";
 const experiences = [
+  {
+    title: "QA Engineer",
+    company: "OMERS, Canada",
+    companyLogo: omersLogo,
+    period: "September 2026 - November 2026",
+    description:
+      `- Engineered and maintained Playwright/TypeScript automation frameworks using Page Object Model (POM) and Cucumber, developing and maintaining 350+ automated tests covering backend services, APIs, UI, and end-to-end workflows for myOMERS.\n
+- Owned 12 GitLab CI/CD pipelines across myOMERS, Donna, and e-access, supporting backend, API, UI, and E2E testing; configured test tags and execution parameters to enable targeted biweekly release validation.\n
+- Investigated and resolved automation failures in release cycle by debugging test scripts, analyzing pipeline results, and querying Oracle databases for test data; collaborated with developers and product owners to identify defects and mitigate release risks.`,
+    technologies: ["Playwright", "TypeScript", "Cucumber", "GitLab CI", "Oracle", "SQL"],
+  },
   {
     title: "Software Developer in Test",
     company: "Enercare, Canada",
