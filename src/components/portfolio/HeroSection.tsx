@@ -30,7 +30,7 @@ const HeroSection = () => {
               <img
                 src={profilePhoto}
                 alt="Rubaiz Momin"
-                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-primary/30 shadow-lg"
+                className="relative w-56 h-56 md:w-64 md:h-64 rounded-full object-cover border-2 border-primary/30 shadow-lg"
               />
             </div>
           </motion.div>
