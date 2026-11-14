@@ -7,7 +7,7 @@ const enercareLogo = "/enercare.jpeg";
 const omersLogo = "/omers.jpg";
 const experiences = [
   {
-    title: "QA Engineer",
+    title: "Software Developer in Test",
     company: "OMERS, Canada",
     companyLogo: omersLogo,
     period: "September 2026 - November 2026",
